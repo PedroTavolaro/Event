@@ -1,0 +1,15 @@
+.testeLogo {
+    height: 30rem;
+    width: 55rem;
+    margin-top: 0.5rem;
+    background: transparent;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 720px){
+    .container{
+        margin-top: 0.2rem;
+        flex-direction: column;
+    }
+}

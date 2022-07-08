@@ -1,0 +1,40 @@
+.button-modal{
+width: 0rem;
+height: 0rem;
+visibility: hidden;
+display: flex;
+}
+
+.text-modal{
+width: 0rem;
+height: 0rem;
+visibility: hidden;
+margin-left: -4rem;
+}
+
+@media screen and (max-width: 1080px){
+ .section{
+  
+ }
+
+ .section-sidebar{
+    border: 5px solid;
+    margin-left: 0rem;
+ }
+
+ .button-modal{
+ width: 5rem;
+ height: 2rem;
+ margin-top: -2rem;
+ margin-left: -7rem;
+ margin-right: 2rem;
+ visibility: visible;
+ }
+
+ .text-modal{
+  visibility: visible;
+  margin-left: 0rem;
+  width:4rem;
+ }
+
+}

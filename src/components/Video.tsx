@@ -1,9 +1,11 @@
 import { DefaultUi, Player, Youtube } from "@vime/react";
 import { gql, useQuery } from "@apollo/client";
-import { CaretRight, DiscordLogo, FileArrowDown, Lightning } from "phosphor-react";
+import { ArrowLeft, CaretRight, DiscordLogo, FileArrowDown, House, Lightning, TelegramLogo } from "phosphor-react";
 
 import '@vime/core/themes/default.css';
 import { useGetLessonBySlugQuery } from "../graphql/generated";
+
+
 
 
 // const GET_LESSON_BY_QUERY = gql `
@@ -54,9 +56,10 @@ export function Video(props: VideoProps){
     }
 
     return(
-        <div className="flex-1">
-           <div className="bg-black flex justify-center">
-                <div className="h-full w-full max-w-[1100px] max-h-[60vh] aspect-video">
+        <div className="master flex-1">
+            
+           <div className="section-one bg-black flex justify-center">
+                <div className="video h-full w-full max-w-[1100px] max-h-[60vh] aspect-video">
                     <Player>
                         <Youtube videoId={data.lesson.videoId} />
                         <DefaultUi />
@@ -66,7 +69,7 @@ export function Video(props: VideoProps){
            </div>
 
            <div className="p-8 max-w-[1100px] mx-auto">
-                <div className="flex items-start gap-16">
+                <div className="section-two flex items-start gap-16">
                     <div className="flex-1">
                         <h1 className="text-2xl font-bold">
                         {data.lesson.title} 
@@ -91,20 +94,20 @@ export function Video(props: VideoProps){
                        )}
                     </div>
 
-                    <div className="flex flex-col gap-4">
-                        <a href="https:" className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors">
+                    <div className="flex flex-col gap-4 ">
+                        <a href="https://discord.gg/Jqf26WYn" className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors">
                             <DiscordLogo size={24} />
                             Comunidade do Discord
                         </a>
 
-                        <a href="https:" className="p-4 text-sm border-blue-500 text-blue-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-blue-500 hover:text-gray-900 transition-colors">
-                            <Lightning size={24} />
-                            Acesse o desafio
+                        <a href="https://t.me/+RfLw83-BAmk1YWEx" className="p-4 text-sm border-2 border-blue-500 text-blue-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-blue-500 hover:text-gray-900 transition-colors">
+                            Acesse o Telegram
+                            <TelegramLogo size={24} />
                         </a>
                     </div>
                 </div>
-                <div className="gap-8 mt-20 grid grid-cols-2">
-                    <a href="" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
+                <div className="section-three flex gap-8 mt-20 grid-cols-2">
+                    <a href="https://drive.google.com/drive/folders/1-nt-ge_iPu2_aAISAaN3DSgvMrXuHCXN?usp=sharing" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
                         <div className="bg-green-700 h-full p-6 flex items-center">
                             <FileArrowDown size={40} />    
                         </div>                        
@@ -121,16 +124,17 @@ export function Video(props: VideoProps){
                         </div>
                     </a>
 
-                    <a href="" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
+                    <a href="https://www.pedrotavolaro.com" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
                         <div className="bg-green-700 h-full p-6 flex items-center">
-                            <FileArrowDown size={40} />    
+                            <House size={40} />    
                         </div>                        
                         <div className="py-6 leading-relaxed">
                             <strong className="text-2xl">
-                                Wallpapers exclusivos
+                                Voltar ao site
                             </strong>
                             <p className="text-sm text-gray-200 mt-2">
-                                Baixe wallpapers exclusivos do ignite lab e personalize a sua máquina
+                                Volte ao site para aproveitar dos nossos conteúdos 
+                                {/* Baixe wallpapers exclusivos do ignite lab e personalize a sua máquina */}
                             </p>
                         </div>
                         <div className="h-full p-6 flex items-center">

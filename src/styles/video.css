@@ -1,0 +1,44 @@
+
+.section-three{
+        display: grid;
+}
+
+
+@media screen and (max-width: 1080px){
+    .section-one{
+       
+    }
+   
+    .container-video{
+     border: red 1px solid;
+    }
+    
+    .section-two{
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .section-three{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .master {
+        
+    }
+    .section-one{
+    
+    
+    }
+    .video{
+       visibility: hidden;
+    }
+    .container-video{
+        
+    }
+    .container-video2{
+        
+        }
+}
