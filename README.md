@@ -1,33 +1,34 @@
+<h1 align="center">Plataformevent</h1>
 
 ## 💻 Projeto
-o projeto foi desenvolvido com objetivo de disponibilizar conteúdos como aulas, apresentações e informações, sendo muito intuitivo e de fácil compreensão, 
+O projeto foi desenvolvido com objetivo de disponibilizar conteúdos como aulas, apresentações e informações, sendo muito intuitivo e de fácil compreensão, 
 dispõe de links para acesso ao material complementar compartilhado na nuvem, acesso as comunidades do discord e telegram, podendo entrar em contato com a galera, recebendo ajuda, fazendo amizade e muito mais,
 utiliza do graphql para cadastramento do e-mail do usuário no evento, assim podendo enviar oportunidades futuras notificações e muito mais.
 
 
 ## :hammer_and_wrench: Features 
 
--   [ ] Login com e-mail.
--   [ ] Captura de login(email), com Graphcms;
--   [ ] Barra de acesso com os conteúdos já disponiveis e futuros;
--   [ ] Link para acessar os materias complementares;
--   [ ] Responsividade;
+-   [x] Login com e-mail.
+-   [x] Captura de login(email), com Graphcms;
+-   [x] Barra de acesso com os conteúdos já disponiveis e futuros;
+-   [x] Link para acessar os materias complementares;
+-   [x] Responsividade;
 
 ## ✨ Tecnologias
 
--   [ ] React
--   [ ] Typescript
--   [ ] Vite
--   [ ] Tawiliwnd
--   [ ] Graphql
--   [ ] Graphcms
--   [ ] Graphql-codegenerator
--   [ ] Apollo
--   [ ] vercel
--   [ ] React-dom
--   [ ] Phospor
--   [ ] Date-fns
--   [ ] React-youtub
+-   [x] React
+-   [x] Typescript
+-   [x] Vite
+-   [x] Tawiliwnd
+-   [x] Graphql
+-   [x] Graphcms
+-   [x] Graphql-codegenerator
+-   [x] Apollo
+-   [x] vercel
+-   [x] React-dom
+-   [x] Phospor
+-   [x] Date-fns
+-   [x] React-youtub
 
 <h2 id="Projeto">
 👔 Projeto
@@ -48,16 +49,20 @@ utiliza do graphql para cadastramento do e-mail do usuário no evento, assim pod
     <td><h5>Apresentação</h5></td>
   </tr>
   <tr>
-    <td><a href="./public/github/time.GIF?raw=true"><img src="./assets/giflogin.GIF"></a></td>
-    <td><a href="./public/github/levelup.GIF?raw=true"><img src="./assets/gifapresentacao.GIF"></a></td>
+    <td><a href="./public/github/time.GIF?raw=true"><img src="./assets/giflogin.GIF"  height='370em'></a></td>
+    <td><a href="./public/github/levelup.GIF?raw=true"><img src="./assets/gifapresentacao.GIF"  height='370em'></a></td>
   </tr>
   <tr align="center">
     <td><h5>Sidebar</h5></td>
-    <td><h5></h5></td>
+    <td><h5>Clique na imagem para ver o projeto no figma</h5></td>
   </tr>
   <tr>
-    <td><a href="./public/github/theme.GIF?raw=true"><img src="./assets/gifscribe.GIF"></a></td>
-    <td></td>
+    <td><a href="./public/github/theme.GIF?raw=true"><img src="./assets/gifscribe.GIF" height='370em'></a></td>
+    <td><a href="https://www.figma.com/file/gP6VF4cow8y1UwjCKy38Qg/Plataforma-de-evento">
+    <p  align="center">
+     <img title="focustime" height='400em' src="./assets/Plataforma - Desktop.png">
+    </p>
+    </a></td>
   </tr>
 </table>
 
