@@ -49,18 +49,18 @@ utiliza do graphql para cadastramento do e-mail do usuário no evento, assim pod
     <td><h5>Apresentação</h5></td>
   </tr>
   <tr>
-    <td><a href="./public/github/time.GIF?raw=true"><img src="./assets/giflogin.GIF"  height='370em'></a></td>
-    <td><a href="./public/github/levelup.GIF?raw=true"><img src="./assets/gifapresentacao.GIF"  height='370em'></a></td>
+    <td><a href="./public/github/time.GIF?raw=true"><img src="./assets/giflogin.GIF"  height='320em'></a></td>
+    <td><a href="./public/github/levelup.GIF?raw=true"><img src="./assets/gifapresentacao.GIF"  height='320em'></a></td>
   </tr>
   <tr align="center">
     <td><h5>Sidebar</h5></td>
     <td><h5>Clique na imagem para ver o projeto no figma</h5></td>
   </tr>
   <tr>
-    <td><a href="./public/github/theme.GIF?raw=true"><img src="./assets/gifscribe.GIF" height='370em'></a></td>
+    <td><a href="./public/github/theme.GIF?raw=true"><img src="./assets/gifscribe.GIF" height='320em'></a></td>
     <td><a href="https://www.figma.com/file/gP6VF4cow8y1UwjCKy38Qg/Plataforma-de-evento">
     <p  align="center">
-     <img title="focustime" height='400em' src="./assets/Plataforma - Desktop.png">
+     <img title="focustime" height='350em' src="./assets/Plataforma - Desktop.png">
     </p>
     </a></td>
   </tr>
