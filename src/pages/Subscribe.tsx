@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { Logo } from "../components/Logo";
 import { useCreateSubscriberMutation } from "../graphql/generated";
 
+import imgCodeMockup from '../assets/Duran1.jpeg';
+
 
 import '../styles/subscribe.css';
 
@@ -12,6 +14,8 @@ export function Subscribe() {
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
+
+    const imageUrl = new URL('./assets/Duran1.jpeg', import.meta.url).href
 
     // const [createSubscriber, { loading }] = useMutation(CREATE_SUBSCRIBER_MUTATION)
 
@@ -72,7 +76,8 @@ export function Subscribe() {
             </div>
         </div>
         
-        <img src='/src/assets/Duran1.jpeg' className="testeLogo" alt=""/>
+        
+        <img className="testeLogo" src={imgCodeMockup} alt='duran' />
 
        </div>
     )
