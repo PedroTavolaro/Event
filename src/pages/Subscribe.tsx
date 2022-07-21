@@ -25,6 +25,7 @@ export function Subscribe() {
     async function handleSubscribe(event: FormEvent){
         event.preventDefault();
 
+        const saveEmail = localStorage.setItem('email', email)
         await createSubscriber({
             variables: {
                 name,
