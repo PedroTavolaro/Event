@@ -2,7 +2,7 @@ import { gql, useQuery } from "@apollo/client";
 import { useGetLessonsQuery } from "../graphql/generated";
 import { Lesson } from "./Lesson";
 
-
+import '../styles/sidebar.css';
 import { useState } from "react";
 import { TelegramLogo } from "phosphor-react";
 

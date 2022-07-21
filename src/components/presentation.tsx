@@ -1,7 +1,7 @@
 import { CaretRight, CheckCircle, DiscordLogo, House, TelegramLogo } from "phosphor-react";
 
 
-
+import '../styles/presentation.css';
 
 
 
