@@ -1,5 +1,5 @@
-import { gql, useMutation, useQuery } from "@apollo/client";
-import { useState, FormEvent, useEffect} from "react";
+import { gql, useMutation } from "@apollo/client";
+import { useState, FormEvent} from "react";
 import { useNavigate } from "react-router-dom";
 import { Logo } from "../components/Logo";
 import { useCreateSubscriberMutation } from "../graphql/generated";
@@ -8,42 +8,8 @@ import imgCodeMockup from '../assets/Duran1.jpeg';
 
 
 import '../styles/subscribe.css';
-import { client } from "../lib/apollo";
-
-const CHECK_EXISTING_USER = gql`
-query {
-    subscribers {
-    email
-  }
-}
-`
-interface CheckExistingUserProps{
-    subscribers: {
-        email: string
-    }
-}
-
-const TESTE_API = gql`
-    query{
-        subscribers {
-        email
-        }
-  }
-`
 
 export function Subscribe() {
-
-    useEffect(() => {
-        client.query({
-            query: TESTE_API,
-        }).then(response => {
-            console.log(response.data)
-        })
-    },[])
-
-    const { data } = useQuery<CheckExistingUserProps>(CHECK_EXISTING_USER)
-    console.log(data)
-
     const navigate = useNavigate();
 
     const [name, setName] = useState('');
@@ -54,27 +20,20 @@ export function Subscribe() {
     // const [createSubscriber, { loading }] = useMutation(CREATE_SUBSCRIBER_MUTATION)
 
     const [createSubscriber, { loading }] = useCreateSubscriberMutation()
-  
 
 
     async function handleSubscribe(event: FormEvent){
         event.preventDefault();
-        const saveEmail = localStorage.setItem('email', email)
-        
-            await createSubscriber({
-                variables: {
-                    name,
-                    email,
-                }
-            })
-            
-        console.log(saveEmail)
+
+        await createSubscriber({
+            variables: {
+                name,
+                email,
+            }
+        })
         navigate('/event')
     }
 
-        const emailLocal = localStorage.getItem('email')
-        console.log(emailLocal)
-    
     return (
        <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
         <div className="section w-full max-w-[1100px] flex items-center justify-between mt-20 mx-auto">
