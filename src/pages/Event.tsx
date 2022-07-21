@@ -7,7 +7,7 @@ import { Sidebar } from "../components/Sidebar";
 import { SidebarMobile } from "../components/SidebarMobile";
 import { Video } from "../components/Video";
 
-import '../styles/event.css';
+
 
 export function Event(){
     const [isModalVisible, setIsModalVisible] = useState(true);

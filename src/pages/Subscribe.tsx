@@ -7,7 +7,7 @@ import { useCreateSubscriberMutation } from "../graphql/generated";
 import imgCodeMockup from '../assets/Duran1.jpeg';
 
 
-import '../styles/subscribe.css';
+
 
 export function Subscribe() {
     const navigate = useNavigate();
