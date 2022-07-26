@@ -1,7 +1,9 @@
 
 .section-three{
         display: grid;
+        
 }
+
 
 
 @media screen and (max-width: 1080px){
@@ -11,34 +13,29 @@
    
     .container-video{
      border: red 1px solid;
+     
     }
     
     .section-two{
     flex-direction: column;
     align-items: center;
+    
+    
+    }
+    .community{
+        width: 100%;
+        align-items: center;
+        margin-left: 1rem;
+        
     }
 
     .section-three{
         display: flex;
-        flex-direction: column;
+        flex-direction: column;  
     }
 }
 
 @media screen and (max-width: 620px){
-    .master {
-        
-    }
-    .section-one{
+
     
-    
-    }
-    .video{
-       visibility: hidden;
-    }
-    .container-video{
-        
-    }
-    .container-video2{
-        
-        }
 }

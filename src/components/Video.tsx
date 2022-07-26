@@ -5,8 +5,9 @@ import { ArrowLeft, CaretRight, DiscordLogo, FileArrowDown, House, Lightning, Te
 import '@vime/core/themes/default.css';
 import { useGetLessonBySlugQuery } from "../graphql/generated";
 
-
-
+import React, { useState } from 'react'
+import '../styles/video.css';
+import { SidebarMobile } from "./SidebarMobile";
 
 // const GET_LESSON_BY_QUERY = gql `
    
@@ -32,6 +33,17 @@ interface VideoProps {
 }
 
 export function Video(props: VideoProps){
+    const [isModalVisible, setIsModalVisible] = useState(false);
+    const [check, setCheck] = useState('');
+    
+    function openModal(){
+        setIsModalVisible(true)
+        setCheck('a')
+    }
+
+    function closeModal(){
+        setIsModalVisible(false)
+    }
 
     // const { data } = useQuery<GetLessonBySlugResponse>(GET_LESSON_BY_QUERY, {
     //     variables: {
@@ -54,9 +66,15 @@ export function Video(props: VideoProps){
             </div>
         )
     }
+console.log(isModalVisible)
+
+const saveStatus = localStorage.setItem('isModalVisible', check)
 
     return(
+
+        
         <div className="master flex-1">
+            
             
            <div className="section-one bg-black flex justify-center">
                 <div className="video h-full w-full max-w-[1100px] max-h-[60vh] aspect-video">
@@ -64,9 +82,26 @@ export function Video(props: VideoProps){
                         <Youtube videoId={data.lesson.videoId} />
                         <DefaultUi />
                     </Player>
-
                 </div>
            </div>
+
+           <div>
+                 {/* <button onClick={openModal}>
+                    
+                 <p className="text-modal">Aulas</p>
+                    <TelegramLogo size={25} />
+                 </button> */}
+{/*                     
+                {
+                    isModalVisible ? 
+                     
+                    <div>
+                        <SidebarMobile />
+                    </div> 
+                    : <p>a</p>
+                } */}
+
+            </div>           
 
            <div className="p-8 max-w-[1100px] mx-auto">
                 <div className="section-two flex items-start gap-16">
@@ -94,7 +129,7 @@ export function Video(props: VideoProps){
                        )}
                     </div>
 
-                    <div className="flex flex-col gap-4 ">
+                    <div className="community flex flex-col gap-4 ">
                         <a href="https://discord.gg/Jqf26WYn" className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors">
                             <DiscordLogo size={24} />
                             Comunidade do Discord
