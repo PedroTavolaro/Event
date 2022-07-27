@@ -7,13 +7,12 @@
 
 
 @media screen and (max-width: 1080px){
+    .master{
+        height:40rem;
+    }
+    
     .section-one{
        
-    }
-   
-    .container-video{
-     border: red 1px solid;
-     
     }
     
     .section-two{
@@ -32,6 +31,7 @@
     .section-three{
         display: flex;
         flex-direction: column;  
+        
     }
 }
 

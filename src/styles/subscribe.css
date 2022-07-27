@@ -22,13 +22,13 @@
     }
 
     .sectionTitle {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
         width:92%;
         
     }
 
     .sectionTitle h1{
-        font-size: 2.7rem;
+        font-size: 1.8rem;
     }
 
     .sectionTwo{
@@ -36,17 +36,17 @@
     }
 
     .sectionTwo strong {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .sectionTwo form {
         gap: 1.5rem;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
 
     .sectionTwo form button {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
 
