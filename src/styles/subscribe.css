@@ -7,6 +7,10 @@
     margin-bottom: 1rem;
 }
 
+.sectionTitle {
+    max-width: 640px;
+}
+
 .sectionTwo{
     margin-top: 0rem;
 }
@@ -17,13 +21,37 @@
         flex-direction: column;
     }
 
+    .sectionTitle {
+        font-size: 2.4rem;
+        max-width: 780px;
+    }
+
+    .sectionTitle h1{
+        font-size: 3.8rem;
+    }
+
     .sectionTwo{
         margin-top: 2rem;
     }
 
+    .sectionTwo strong {
+        font-size: 2.5rem;
+    }
+
+    .sectionTwo form {
+        gap: 1.5rem;
+        font-size: 1.8rem;
+    }
+
+
+    .sectionTwo form button {
+        font-size: 1.5rem;
+    }
+
+
     .testeLogo{
         margin-top: 1rem;
-        width: 28rem;
-        height: 18rem;
+        width: 78%;
+        height: 40rem;
     }
 }
