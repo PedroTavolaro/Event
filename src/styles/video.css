@@ -36,6 +36,13 @@
 }
 
 @media screen and (max-width: 620px){
-
+    .section-three a p{
+        margin-left: -6rem;
+        width: 199%;
+        
+    }
+    .divArrow {
+        margin-left: -1.6rem;
+    }
     
 }

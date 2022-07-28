@@ -27,7 +27,8 @@ export function Event(){
 
     const { slug } = useParams<{slug: string}>()
     return(
-        <div className="flex flex-col min-h-screen">
+      
+        <div className="container-master flex flex-col min-h-screen">
           {isModalVisible ? 
           <>
            <Header />
@@ -42,7 +43,7 @@ export function Event(){
           <Header />
           }
 
-            <main className="section flex flex-1">
+            <main className="section">
                         
                 {isModalVisible ?  
                  <div className="container3">
@@ -70,16 +71,16 @@ export function Event(){
                 
                 :
                 
-                <>
                 
+                <>
                   <SidebarMobile />
-                      
+                   
                 <button className="button-modal-open flex" onClick={closeModal}>
                     <p className="text-modal-open">Assistir aula selecionada</p>
                 <TelegramLogo size={25} />
                 </button>
-                </>
-               
+                
+               </>
                 }
                   
             </main>

@@ -63,7 +63,7 @@ export function Presentation(){
                                 </div>
                                 
                                 <div className="teacher-description">
-                                        <strong className="text-gray-200 text-sm block"> Co-fundador e CTO na Duran </strong>
+                                        <strong className="text-gray-200 text-sm block"> CEO na Duran </strong>
                                 </div>
                                 <strong className='bio block text-blue-500 ml-6'>
                                     Profissíonal de Tecnologia

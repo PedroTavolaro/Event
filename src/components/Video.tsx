@@ -154,7 +154,7 @@ const saveStatus = localStorage.setItem('isModalVisible', check)
                                 Acesse o material complementar para acelerar seu desenvolvimento
                             </p>
                         </div>
-                        <div className="h-full p-6 flex items-center">
+                        <div className="divArrow h-full p-6 flex items-center">
                             <CaretRight size={24} />
                         </div>
                     </a>
@@ -172,7 +172,7 @@ const saveStatus = localStorage.setItem('isModalVisible', check)
                                 {/* Baixe wallpapers exclusivos do ignite lab e personalize a sua máquina */}
                             </p>
                         </div>
-                        <div className="h-full p-6 flex items-center">
+                        <div className=" h-full p-6 flex items-center">
                             <CaretRight size={24} />
                         </div>
                     </a>

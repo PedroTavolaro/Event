@@ -1,11 +1,13 @@
 
 .sidebar {
     width: 370px;
+    
 }
  
  @media screen and (max-width: 1080px){
   .sidebar{
         width: 400px;
+        height: 100%;
         margin-top: 0rem;
     }
  }
