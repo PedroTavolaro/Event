@@ -147,10 +147,10 @@ const saveStatus = localStorage.setItem('isModalVisible', check)
                             <FileArrowDown size={40} />    
                         </div>                        
                         <div className="py-6 leading-relaxed">
-                            <strong className="text-2xl">
+                            <strong className="sectionT1">
                                 Material complementar
                             </strong>
-                            <p className="sectionP2 text-sm text-gray-200 mt-2">
+                            <p className="sectionP2 text-sm text-gray-200 ">
                                 Acesse o material complementar para acelerar seu desenvolvimento
                             </p>
                         </div>

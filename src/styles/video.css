@@ -43,16 +43,22 @@
 
     .section-three{
         margin-left: -1rem;
-        width:95%;        
+        width:100%;        
+    }
+
+    .sectionT1{
+        font-size: 1.7rem;
     }
     
     .sectionP2{
         margin-left: -6rem;
-        width: 110%;
+        width: 90%;
+        margin-top: 2rem;
+        margin-bottom: -1rem;
     }
     .sectionP3{
         margin-left: -6rem;
-        width: 320%;
+        width: 220%;
     }
     .divArrow {
         margin-left: -8.6rem;
