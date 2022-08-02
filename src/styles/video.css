@@ -36,13 +36,26 @@
 }
 
 @media screen and (max-width: 620px){
-    .section-three a p{
+    
+    .community{
+        margin-left: -1.5rem;
+    }
+
+    .section-three{
+        margin-left: -1rem;
+        width:95%;        
+    }
+    
+    .sectionP2{
         margin-left: -6rem;
-        width: 199%;
-        
+        width: 110%;
+    }
+    .sectionP3{
+        margin-left: -6rem;
+        width: 320%;
     }
     .divArrow {
-        margin-left: -1.6rem;
+        margin-left: -8.6rem;
     }
     
 }

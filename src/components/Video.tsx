@@ -150,7 +150,7 @@ const saveStatus = localStorage.setItem('isModalVisible', check)
                             <strong className="text-2xl">
                                 Material complementar
                             </strong>
-                            <p className="text-sm text-gray-200 mt-2">
+                            <p className="sectionP2 text-sm text-gray-200 mt-2">
                                 Acesse o material complementar para acelerar seu desenvolvimento
                             </p>
                         </div>
@@ -167,7 +167,7 @@ const saveStatus = localStorage.setItem('isModalVisible', check)
                             <strong className="text-2xl">
                                 Voltar ao site
                             </strong>
-                            <p className="text-sm text-gray-200 mt-2">
+                            <p className="sectionP3 text-sm text-gray-200 mt-2">
                                 Volte ao site para aproveitar dos nossos conteúdos 
                                 {/* Baixe wallpapers exclusivos do ignite lab e personalize a sua máquina */}
                             </p>
