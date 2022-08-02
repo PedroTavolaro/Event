@@ -28,7 +28,7 @@ export function Lesson(props: LessonProps){
     
     console.log(slug)
     return(
-        <>
+        <div>
     
         { isLessonAvailable ? 
             <Link to={`/event/lesson/${props.slug}`} className='group'>
@@ -116,7 +116,7 @@ export function Lesson(props: LessonProps){
             )
         }
 
-        </>
+        </div>
         
     )
 }
