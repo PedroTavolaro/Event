@@ -78,10 +78,11 @@ const saveStatus = localStorage.setItem('isModalVisible', check)
             
            <div className="section-one bg-black flex justify-center">
                 <div className="video h-full w-full max-w-[1100px] max-h-[60vh] aspect-video">
-                    <Player>
+                    {/* <Player>
                         <Youtube videoId={data.lesson.videoId} />
                         <DefaultUi />
-                    </Player>
+                    </Player> */}
+                    <iframe src={`https://www.youtube.com/embed/${data.lesson.videoId}`} className="video h-full w-full max-w-[1100px] max-h-[60vh] aspect-video" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
            </div>
 
